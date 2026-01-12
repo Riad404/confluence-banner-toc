@@ -1,0 +1,23 @@
+modules:
+  confluence:pageBanner:
+    - key: toc-page-banner
+      title: TOC Banner
+      resource: ui
+      resolver:
+        function: resolver
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: ui
+    path: static/page-banner/build
+app:
+  runtime:
+    name: nodejs20.x
+  id: ari:cloud:ecosystem::app/bdd74af4-9ed9-451f-b48e-e05aa55514c5
+permissions:
+  scopes:
+    - storage:app
+    - read:page:confluence
+    - read:content-details:confluence
+    - read:confluence-user

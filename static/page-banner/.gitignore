@@ -1,0 +1,18 @@
+# Node / Forge
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.DS_Store
+
+# Forge local files (keep credentials/private metadata out of git)
+.forge/
+*.log
+
+# Build outputs
+static/**/build/
+static/**/dist/
+
+# IDE
+.vscode/
